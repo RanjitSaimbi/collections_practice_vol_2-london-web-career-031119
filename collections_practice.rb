@@ -24,7 +24,7 @@ def first_wa(array)
   end 
   array_of_wa = []
   array_of_strings.each do |word|
-    array_of_wa << word if word.include?("wa")
+    array_of_wa << word if word[0] + word[1] == "wa"
   end 
   array_of_wa[0]
 end 
@@ -75,31 +75,6 @@ def organize_schools (hash)
   school_sorted
 end
 
-
-    # {
-    #   "flatiron school bk" => {
-    #     :location => "NYC"
-    #   },
-    #   "flatiron school" => {
-    #     :location => "NYC"
-    #   },
-    #   "dev boot camp" => {
-    #     :location => "SF"
-    #   },
-    #   "dev boot camp chicago" => {
-    #     :location => "Chicago"
-    #   },
-    #   "general assembly" => {
-    #     :location => "NYC"
-    #   },
-    #   "Hack Reactor" => {
-    #     :location => "SF"
-    #   }
-    # }
-    
-  # {"NYC"=>["flatiron school bk", "flatiron school", "general assembly"],
-  #   "SF"=>["dev boot camp", "Hack Reactor"],
-  #   "Chicago"=>["dev boot camp chicago"]}  
 
 
 
